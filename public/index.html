@@ -3,33 +3,35 @@
 <head>
 	<title></title>
 	<meta charset="UTF-8">
-	<script
+	<script	
       src="https://code.jquery.com/jquery-3.2.1.js"
       integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
       crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" type="text/css" href="main.css">
     <script type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
-	<form method="POST">
+	<form method="GET">
 	<p>
 		<label for="first_name">Nombre</label>
-		<input type="text" name="first_name" id="first_name" required=""/>
+		<input type="text" name="first_name" id="first_name" required class="input-text" />
 	</p>
 
 	<p>
 		<label for="">Apellidos</label>
-		<input type="text" name="last_name"/>
+		<input type="text" name="last_name" class="input-text" id="last_name" />
 	<p>
 		<label for="">Sexo</label>
-		<input type="radio" name="gender" value="f" id="femenino" />
+		<input type="radio" name="gender" value="f" id="femenino" id="sexo-text" />
 		<label>femenino</label>
 		<input type="radio" name="gender" value="m" id="masculino" />
 		<label>masculino</label>
 	</p>
 
-	<p>
+	<p>	
+		<input type="checkbox" name="interest" value="intereses" id="interest-text" />
 		<label for="">intereses</label>
 		<input type="checkbox" name="interest" value="tecnologia" />
 		<label for="dev">tecnologia</label>
